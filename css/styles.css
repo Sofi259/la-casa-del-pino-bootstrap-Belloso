@@ -105,6 +105,7 @@ body{
 }
 .menu-hamb{
 		display: none;
+		height: fit-content;
 }
 .bar{
 	display: block;
@@ -113,6 +114,13 @@ body{
 	margin: 5px auto;
 	background-color: #606060;
 }
+.hero{
+	text-align: justify;
+}
+
+
+
+
 @media all and (max-width: 768px){
 	.header ul li{
 		font-size: 17px;
@@ -126,7 +134,8 @@ body{
 		font-size: 14px;
 	}
 	.header{
-		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 	#buscar{
 		transform: scale(.8);
@@ -157,9 +166,22 @@ body{
 	}
 	#header__nav.active{
 		left: 0;
+	}
+	.navbar-brand{
+		order: 2;
+		justify-self: center;
+	}
+	.menu-hamb{
+		order: 1;
+	}
+	#buscar{
+		order: 3;
 	}	
 }
-.card:hover{
+
+
+
+#prod-1:hover, #prod-2:hover, #prod-3:hover{
 	animation-name: shadow-drop-center;
 	animation-timing-function: linear;
 	animation-fill-mode: both;
