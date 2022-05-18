@@ -146,7 +146,7 @@ body{
 	margin-bottom: 6rem;
 }
 .vision-border, .values-border{
-	border-color: rgba(212, 97, 4, 1);
+	border-color: rgba(212, 97, 4, 1) !important;
 	min-height: 180px;
 }
 .values-border{
